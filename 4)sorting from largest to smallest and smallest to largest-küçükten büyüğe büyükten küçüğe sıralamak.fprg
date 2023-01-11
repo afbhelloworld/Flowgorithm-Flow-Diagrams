@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bbbaysal"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-21 04:10:19 &#214;S"/>
+        <attribute name="created" value="YmJiYXlzYWw7QkFZU0FMX1BDXzc1Nzc7MjAxOS0xMC0xNjsxMDo1Njo0MyDDllM7MzI1NA=="/>
+        <attribute name="edited" value="YmJiYXlzYWw7QkFZU0FMX1BDXzc1Nzc7MjAxOS0xMC0xODsxMjoxNToxMiDDlsOWOzI7MzQ4OQ=="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjItMTItMjE7MDQ6MTA6MTkgw5ZTOzU7NDAxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="False" size=""/>
+            <output expression="&quot;diziniz ka&#231; adet say&#305;dan olu&#351;acak &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;l&#252;tfen say&#305;lar&#305; giriniz&quot;" newline="True"/>
+            <declare name="D1" type="Integer" array="True" size="n"/>
+            <declare name="birinci, ikinci, kontrol" type="Integer" array="False" size=""/>
+            <assign variable="birinci" expression="1"/>
+            <assign variable="ikinci" expression="2"/>
+            <declare name="TMP" type="Integer" array="False" size=""/>
+            <declare name="X" type="Integer" array="False" size=""/>
+            <declare name="J" type="Integer" array="False" size=""/>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <for variable="I" start="0" end="n-1" direction="inc" step="1">
+                <input variable="X"/>
+                <assign variable="D1[I]" expression="X"/>
+            </for>
+            <output expression="&quot;B&#252;y&#252;kten k&#252;&#231;&#252;&#287;e s&#305;ralamak istiyorsan&#305;z(1),k&#252;&#231;&#252;kten b&#252;y&#252;&#287;e s&#305;ralamak istiyorsan&#305;z(2),l&#252;tfen 1 veya 2 say&#305;lar&#305;ndan birisini giriniz&quot;" newline="True"/>
+            <input variable="kontrol"/>
+            <if expression="kontrol==1">
+                <then>
+                    <for variable="I" start="0" end="n-1" direction="inc" step="1">
+                        <for variable="J" start="0" end="n-1" direction="inc" step="1">
+                            <if expression="D1[I]&gt;D1[J]">
+                                <then>
+                                    <assign variable="TMP" expression="D1[J]"/>
+                                    <assign variable="D1[J]" expression="D1[I]"/>
+                                    <assign variable="D1[I]" expression="TMP"/>
+                                </then>
+                                <else>
+                                    <comment text="b&#252;y&#252;kten k&#252;&#231;&#252;&#287;e s&#305;ralama"/>
+                                </else>
+                            </if>
+                        </for>
+                    </for>
+                    <for variable="I" start="0" end="n-1" direction="inc" step="1">
+                        <output expression="D1[I]" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="I" start="0" end="n-1" direction="inc" step="1">
+                        <for variable="J" start="0" end="n-1" direction="inc" step="1">
+                            <if expression="D1[I]&lt;D1[J]">
+                                <then>
+                                    <assign variable="TMP" expression="D1[J]"/>
+                                    <assign variable="D1[J]" expression="D1[I]"/>
+                                    <assign variable="D1[I]" expression="TMP"/>
+                                </then>
+                                <else>
+                                    <comment text="k&#252;&#231;&#252;kten b&#252;y&#252;&#287;e s&#305;ralama"/>
+                                </else>
+                            </if>
+                        </for>
+                    </for>
+                    <for variable="I" start="0" end="n-1" direction="inc" step="1">
+                        <output expression="D1[I]" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

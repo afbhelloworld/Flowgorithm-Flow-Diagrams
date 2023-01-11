@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-12 12:47:16 &#214;&#214;"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjItMTAtMTk7MDI6MTU6NTAgw5ZTOzM5MDc="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MTI6NDc6MTYgw5bDljszOzQxNTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <output expression="&quot;l&#252;tfen &#252;&#231; tane say&#305; giriniz(please enter three number)&quot;" newline="True"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <input variable="z"/>
+            <if expression="y&lt;x">
+                <then>
+                    <if expression="z&lt;x">
+                        <then>
+                            <output expression="&quot;en b&#252;y&#252;k x(biggest) 'tir&quot;&amp;x" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="z&lt;y">
+                        <then>
+                            <output expression="&quot; enb&#252;y&#252;k(biggest) y 'dir&quot;&amp;y" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;en b&#252;y&#252;k(biggest) z 'dir &quot;&amp;z" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

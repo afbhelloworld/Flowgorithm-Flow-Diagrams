@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-21 02:53:50 &#214;S"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjItMTAtMTk7MDM6MTU6NTIgw5ZTOzM5MTA="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjItMTItMjE7MDI6NTM6NTAgw5ZTOzM7NDAxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i, dongu" type="Integer" array="False" size=""/>
+            <assign variable="dongu" expression="0"/>
+            <output expression="&quot;L&#252;tfen bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="1" end="sayi" direction="inc" step="1">
+                <if expression="sayi%i ==0">
+                    <then>
+                        <assign variable="dongu" expression="dongu + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="dongu &gt;2">
+                <then>
+                    <output expression="&quot;Girdi&#287;iniz Say&#305; Asal De&#287;ildir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Girdi&#287;iniz Say&#305; Asald&#305;r&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

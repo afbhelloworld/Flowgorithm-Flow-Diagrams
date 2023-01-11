@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-21 03:00:26 &#214;S"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjItMTItMjE7MDE6NTk6MjYgw5ZTOzM5MTI="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjItMTItMjE7MDM6MDA6MjYgw5ZTOzQ7NDAxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;D&#304;KD&#214;RTGEN(1),&#220;&#199;GEN(2),DA&#304;RE(3)   :HANG&#304;S&#304;N&#304;N ALAN HESABINI YAPMAK &#304;ST&#304;YORSUNUZ. L&#252;tfen 1,2,3 say&#305;lar&#305;ndan birini giriniz&quot;" newline="True"/>
+            <declare name="X, Y, Z, D" type="Integer" array="False" size=""/>
+            <assign variable="X" expression="1"/>
+            <assign variable="Y" expression="2"/>
+            <assign variable="Z" expression="3"/>
+            <input variable="D"/>
+            <if expression="D==1">
+                <then>
+                    <declare name="dik, a, b" type="Integer" array="False" size=""/>
+                    <output expression="&quot;uzun kenar&#305; ve k&#305;sa kenar&#305; s&#305;ral&#305; giriniz&quot;" newline="True"/>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <assign variable="dik" expression="a*b"/>
+                    <output expression="&quot;Dikd&#246;rtgenin alan&#305;   :&quot;&amp;dik" newline="True"/>
+                </then>
+                <else>
+                    <if expression="D==2">
+                        <then>
+                            <declare name="gen, t, v" type="Integer" array="False" size=""/>
+                            <output expression="&quot;&#252;&#231;genin alt taban ve &#252;st taban&#305;n&#305; giriniz&quot;" newline="True"/>
+                            <input variable="t"/>
+                            <input variable="v"/>
+                            <assign variable="gen" expression="(t*v)/2"/>
+                            <output expression="&quot;&#220;&#231;genin alan&#305;  :&quot;&amp;gen" newline="True"/>
+                        </then>
+                        <else>
+                            <declare name="sabit, r, daire" type="Real" array="False" size=""/>
+                            <output expression="&quot;dairenin yar&#305; &#231;ap&#305;n&#305; giriniz pi say&#305;s&#305; 3,14 olarak kabul edilmi&#351;tir&quot;" newline="True"/>
+                            <assign variable="sabit" expression="3.14"/>
+                            <input variable="r"/>
+                            <assign variable="daire" expression="sabit*r*r"/>
+                            <output expression="&quot;Dairenin alan&#305; :  &quot;&amp;daire" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

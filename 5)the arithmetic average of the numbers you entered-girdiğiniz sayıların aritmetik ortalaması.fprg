@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-21 02:57:10 &#214;S"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjItMTItMjE7MDE6MzY6Mjcgw5ZTOzM5MDg="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjItMTItMjE7MDI6NTc6MTAgw5ZTOzU7NDAxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="False" size=""/>
+            <output expression="&quot;ka&#231; adet say&#305;y&#305; toplamak istiyorsunuz &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;l&#252;tfen say&#305;lar&#305; giriniz&quot;" newline="True"/>
+            <declare name="D1" type="Integer" array="True" size="n"/>
+            <declare name="toplam, X, I" type="Real" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="I" start="0" end="n-1" direction="inc" step="1">
+                <input variable="X"/>
+                <assign variable="D1[I]" expression="X"/>
+                <assign variable="toplam" expression="toplam + D1[I]"/>
+            </for>
+            <for variable="I" start="0" end="n-1" direction="inc" step="1"/>
+            <assign variable="toplam" expression="toplam/n"/>
+            <output expression="&quot;Girdi&#287;iniz say&#305;lar&#305;n aritmetik ortalamas&#305;  :&quot; &amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
