@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-12 10:59:55 &#214;S"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MTA6Mzc6NTMgw5ZTOzM5MDc="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MTA6NTk6NTUgw5ZTOzE7NDAyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Program to add numbers entered until 0 is entered from the keyboard(Klavyeden 0 girilene kadar girilen say&#305;lar&#305; toplayan program)"/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <for variable="number" start="0" end="100" direction="inc" step="1">
+                <input variable="number"/>
+                <assign variable="sum" expression="sum + number"/>
+                <if expression="number==0">
+                    <then>
+                        <output expression="sum" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

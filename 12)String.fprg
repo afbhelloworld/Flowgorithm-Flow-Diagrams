@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-12 09:49:49 &#214;S"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MDk6NDY6MzAgw5ZTOzM5MTA="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MDk6NDk6NDkgw5ZTOzE7NDAzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mesaj" type="String" array="False" size=""/>
+            <assign variable="mesaj" expression="&quot;Merhaba D&#252;nya&quot;"/>
+            <output expression="mesaj" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-12 09:51:39 &#214;S"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MDk6NTA6MjEgw5ZTOzM5MDU="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MDk6NTE6Mzkgw5ZTOzE7NDAyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ger&#231;eksay&#305;" type="Real" array="False" size=""/>
+            <assign variable="ger&#231;eksay&#305;" expression="6.4"/>
+            <output expression="ger&#231;eksay&#305;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-12 10:27:32 &#214;S"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MTA6MDA6Mjcgw5ZTOzM4OTg="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MTA6Mjc6MzIgw5ZTOzE7NDAxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="X" type="String" array="False" size=""/>
+            <output expression="&quot;Please tell me what is the indivisible thing in the world ? &quot;" newline="True"/>
+            <input variable="X"/>
+            <declare name="bool" type="Boolean" array="False" size=""/>
+            <if expression="X==&quot;homeland&quot; || X==&quot;HOMELAND&quot; || X==&quot;Homeland&quot;">
+                <then>
+                    <assign variable="bool" expression="true"/>
+                    <output expression="&quot;congratulations ,&quot;&amp;bool" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="bool" expression="false"/>
+                    <output expression="bool&amp;&quot; , Correct answer is homeland &quot;&amp;&quot;(TURKEY)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

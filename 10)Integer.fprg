@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FahrettinPasha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-12 09:57:45 &#214;S"/>
+        <attribute name="created" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MDk6NTE6NDcgw5ZTOzM5MTQ="/>
+        <attribute name="edited" value="RmFocmV0dGluUGFzaGE7REVTS1RPUC1DRkNDTVM1OzIwMjMtMDEtMTI7MDk6NTc6NDUgw5ZTOzE7NDAyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tamsay&#305;" type="Integer" array="False" size=""/>
+            <assign variable="tamsay&#305;" expression="10/3"/>
+            <output expression="tamsay&#305;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
